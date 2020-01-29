@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/c4684a5e48.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:400,600|Julius+Sans+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="index.html" class="logo"><i class="fas fa-spa"></i> Recall</a>
+
+        <nav>
+            <div class="nav-item">
+                <a href="#">Services</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="#">Products</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">About Us</a>
+            </div>
+            <div class="nav-item active">
+                <a href="#">Login</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="content">
+        <div class="login-column">
+            <form class="login-form" name="form" onsubmit="return(validate());">
+                <h1>Sign Up</h1>
+                <div class="inputs">
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="submit" value="Sign Up">
+                </div>
+
+                <a href="#">Forgot your password?</a>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="validation.js"></script>
+</body>
+</html>

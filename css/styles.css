@@ -1,0 +1,194 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+    
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+
+    background-image: url("../img/b_5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*Global*/
+img {
+    max-width: 100%; 
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+
+    color: rgb(212, 212, 212);
+    font-size: 5rem;
+    letter-spacing: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* padding-top: 1.4rem; */
+    padding-left: 2rem;
+    background-color: rgb(48, 48, 48);
+}
+
+.logo {
+    color: rgb(212, 212, 212);
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+    transition: .2s ease;
+}
+
+.logo:hover {
+    color: rgb(255, 255, 255);
+}
+
+.logo i {
+    color: rgb(86, 158, 128);
+    font-size: 1.6rem;
+}
+
+nav {
+    display: flex;
+}
+
+nav .nav-item {
+    height: 4rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: .2s ease;
+}
+
+nav a {
+    color: rgb(200, 200, 200);
+
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    text-decoration: none;
+}
+
+nav .nav-item:hover{
+    border-bottom: 5px solid rgb(86, 158, 128);
+    background-color: rgb(80, 80, 80);
+
+    cursor: pointer;
+}
+
+nav .nav-item.active:hover, .active {
+    border-bottom: 5px solid rgb(106, 221, 173);
+}
+
+/* Login */
+.content {
+    display: flex;
+}
+
+.login-column {
+    height: 91vh;   
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 7rem;
+    margin: 0 auto;
+
+    background-color: rgba(48, 48, 48, 0.6);
+
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 0;
+}
+
+input[type = "email"], input[type = "password"] {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+
+    background-color: rgba(48, 48, 48, .7);
+    border: 2px solid rgba(0, 0, 0, .6);
+
+    color: rgb(212, 212, 212);
+
+    transition: .2s ease;
+}
+
+input[type = "email"]:focus, input[type = "password"]:focus {
+    border: 2px solid rgba(86, 158, 128, 1);
+}
+
+input[type ="submit"] {
+    margin-top: 3rem;
+    padding: .8rem 2.4rem;
+
+    background-color: rgba(48, 48, 48, .7);
+    border: 2px solid rgba(86, 158, 128, 1);
+    
+    color: rgb(226, 226, 226);
+
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+
+    transition: .4s ease-in-out;
+}
+
+input[type ="submit"]:hover {
+    background-color: rgb(86, 158, 128);
+    cursor: pointer;
+}
+
+.login-form a {
+    color: rgb(200, 200, 200);
+    transition: .2s linear;
+}
+
+.login-form a:hover {
+    color: rgb(235, 235, 235);
+    text-decoration: underline;
+}
